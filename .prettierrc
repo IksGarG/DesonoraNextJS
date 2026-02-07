@@ -5,8 +5,6 @@
   "singleQuote": true,
   "printWidth": 80,
   "organizeImportsSkipDestructiveCodeActions": true,
-  "plugins": [
-    "prettier-plugin-tailwindcss",
-    "prettier-plugin-organize-imports"
-  ]
+  "tailwindFunctions": ["clsx"],
+  "plugins": ["prettier-plugin-tailwindcss", "prettier-plugin-organize-imports"]
 }

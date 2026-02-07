@@ -1,0 +1,13 @@
+{
+  "Navbar": {
+    "home": "Inicio",
+    "boots": "Nuestras Botas",
+    "about": "Acerca de",
+    "contact": "Contáctanos"
+  },
+  "ThemeToggle": {
+    "light": "Claro",
+    "dark": "Obscuro",
+    "system": "Sistema"
+  }
+}

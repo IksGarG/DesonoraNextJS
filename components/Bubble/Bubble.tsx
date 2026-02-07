@@ -1,8 +1,8 @@
 'use client';
 
+import gsap from 'gsap';
 import Image from 'next/image';
 import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
 
 export type BubbleProps = {
   id: number;
@@ -141,7 +141,7 @@ export default function Bubble({
           <div className="h-full w-full">
             <div className="pointer-events-none absolute inset-0 select-none">
               <Image
-                src={image} 
+                src={image}
                 alt={label}
                 fill
                 sizes="(max-width: 768px) 140px, 200px"

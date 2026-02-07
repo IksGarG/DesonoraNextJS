@@ -1,9 +1,9 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
-import type { PointerEvent } from 'react';
-import Image from 'next/image';
 import gsap from 'gsap';
+import Image from 'next/image';
+import type { PointerEvent } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import Bubble from './Bubble';
 
 const WORLD_SIZE = 2000;

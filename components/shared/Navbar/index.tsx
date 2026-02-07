@@ -9,11 +9,14 @@ import {
   Languages,
   ShoppingBag,
 } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import React from 'react';
+import { LocaleToggle } from './LocaleToggle';
 import { ModeToggle } from './ModeToggle';
 
 export default function Navbar() {
+  const t = useTranslations('Navbar');
   return (
     <div
       className={clsx(
@@ -24,29 +27,30 @@ export default function Navbar() {
         <div className={clsx('flex items-center justify-start gap-3')}>
           <Button variant="ghost" size="sm" asChild>
             <Link href="/">
-              <House /> Inicio
+              <House /> {t('home')}
             </Link>
           </Button>
           <Button variant="ghost" size="sm" asChild>
             <Link href="/boots">
               <Footprints />
-              Nuestras Botas
+              {t('boots')}
             </Link>
           </Button>
           <Button variant="ghost" size="sm" asChild>
-            <Link href="/quienes-somos">
+            <Link href="/about">
               <CircleQuestionMark />
-              Quienes Somos
+              {t('about')}
             </Link>
           </Button>
           <Button variant="ghost" size="sm" asChild>
-            <Link href="/contacto">
+            <Link href="/contact">
               <BookUser />
-              Contacto
+              {t('contact')}
             </Link>
           </Button>
         </div>
         <div className={clsx('flex items-center justify-start gap-2')}>
+          <LocaleToggle />
           <ModeToggle />
           <Button variant="ghost" size="icon">
             <CircleUserRound />

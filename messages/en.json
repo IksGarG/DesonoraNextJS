@@ -1,0 +1,13 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "boots": "Our Boots",
+    "about": "About",
+    "contact": "Contact Us"
+  },
+  "ThemeToggle": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  }
+}

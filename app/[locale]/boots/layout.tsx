@@ -1,7 +1,11 @@
-import clsx from 'clsx'
-import React from 'react'
+import clsx from 'clsx';
+import React from 'react';
 
-export default function BootsLayout({ children }: { children: React.ReactNode }) {
+export default function BootsLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <div className={clsx('h-screen w-screen relative')}>
       <div className="pointer-events-none absolute inset-0">
@@ -25,5 +29,5 @@ export default function BootsLayout({ children }: { children: React.ReactNode })
       </div>
       {children}
     </div>
-  )
+  );
 }
